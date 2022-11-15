@@ -17,7 +17,7 @@ inizio.addEventListener('click',
         document.getElementById('pc').innerHTML= `il numero del tuo avversario è ${numPC}`;
         document.getElementById('sum').innerHTML= `la somma dei due numeri è ${sommaNum}`;
 
-        if (sommaNum % 2 === 0 && scommessa === 'pari' || sommaNum % 2 === 1 && scommessa === 'dispari'){
+        if (pariDispari(sommaNum) === scommessa){
             risultato.innerHTML= `HAI VINTO!`
         }else{
             risultato.innerHTML= 'HAI PERSO. RITENTA!'
@@ -31,4 +31,13 @@ inizio.addEventListener('click',
 function somma(num1, num2){
     const sommaN= num1+num2;
     return sommaN;
+}
+
+function pariDispari (num){
+    if(num % 2 === 0){
+        return 'pari';
+    }else{
+        return 'dispari';
+    }
+
 }
