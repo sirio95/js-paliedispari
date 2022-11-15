@@ -1,4 +1,4 @@
-
+//palindromo
 inizio.addEventListener('click', 
     function(){
         let palindromo= false; 
@@ -15,14 +15,6 @@ inizio.addEventListener('click',
         }
     }                           
 )
-
-
-
-
-
-
-
-
 
 
 //funzioni
